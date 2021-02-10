@@ -74,7 +74,31 @@ randomLang = languages[6]
 # Length of a languages 
 # print(len(languages))
 
+n = int(input("Masukkan N : "))
+arr = []
+for i in range(n) :
+    x = int(input()) 
+    arr.append(x)
+print(f"Hasil : {arr}")
 
-
-
-
+# Sum
+Sum = 0
+for i in range(len(arr)) : 
+    Sum += arr[i]
+# Rata-rata 
+avg = Sum / len(arr)
+# Nilai Maksimal 
+max = float("-inf")
+for i in arr : 
+    if(i > max) : 
+        max = i 
+# Nilai Minimal 
+min = float("inf")
+for i in range(len(arr)) : 
+    item = arr[i]
+    if( item < min) : 
+        min = item
+print(f"Sum : {Sum}")
+print(f"Max : {max}")
+print(f"Min : {min}")
+print(f"Avg : {avg}")
